@@ -87,7 +87,6 @@ body{
 .left-column{
 	width: 250px;
 	float: left;
-	margin-right: 65px;
 }
 .left-column .navigation{
 	border-radius: 4px;
@@ -111,6 +110,9 @@ body{
 	padding: 26px 0;
 	padding-left: 15px;
 	
+}
+.left-column .navigation a:hover{
+	color:#3ba8c0;
 }
 .left-column .navigation li{
 	margin:0 11px;
@@ -161,14 +163,47 @@ body{
 }
 .left-column-contact .contacts li:hover{
 	text-decoration: underline;
+	cursor: pointer;
+	background-color: #48cbe8;
 }
-.left-column-contact .contacts-item:after{
+.left-column-contact .mail:before{
+	content: "";
 	position: absolute;
-	left:;
-	top: ;
+	left:40px;
+	top: 10px;
+	background: url(../img/mail.png) no-repeat;
+	color: #000;
+	width:21px ;
+	height:16px ;
+}
+.left-column-contact .phone:before{
+	content: "";
+	position: absolute;
+	left:40px;
+	top: 10px;
+	background: url(../img/phone.png) no-repeat;
+	color: #000;
+	width:21px ;
+	height:23px ;
+}
+.left-column-contact .skype:before{
+	content: "";
+	position: absolute;
+	left:40px;
+	top: 10px;
+	background: url(../img/skype.png) no-repeat;
+	color: #000;
+	width:20px ;
+	height:20px ;
 }
 
 /*Контакты конец*/
+/*Правая колона начало*/
+.wrapper .right-column{
+	float: right;
+	width: 650px;
+}
+/*Правая колона конец*/
 /*Прибьем футер к низу начало*/
 
 .wrapper{
