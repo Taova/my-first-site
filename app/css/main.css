@@ -8,7 +8,7 @@ body{
 	color:#5a636b;
 	background-color:#eff3f7 ;
 }
-.clearfix{
+.clearfix:after{
 	content: '';
 	clear: both;
 	display: table;
@@ -203,7 +203,141 @@ body{
 	float: right;
 	width: 650px;
 }
+.right-column .right-column-main{
+	background-color: #eff3f7;
+	margin-bottom: 27px;
+	padding-bottom: 45px;
+}
+.right-column-main h1{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-size: 27px;
+	font-family: sans-serif;
+	color: #3ba8c0;
+	padding-top: 21px;
+	padding-bottom: 25px;
+	padding-left: 21px;
+	margin-bottom: 23px;
+}
+.right-column-main .autobox-header:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left:0;
+	height: 2px;
+	width: 340px;
+	background: #33a5bd;
+	
+}
+.right-column .image-wrap{
+	float:left;
+	width: 205px;
+	
+}
+.image-wrap .avatar-box{
+	margin-left: 55px;
+	width: 142px;
+	height: 142px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+.right-column .variable-content{
+	float: right;
+	width: 400px;
+}
+.variable-content .autobox-list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.autobox-list .autobox-item{
+	font-family: 'fira_sansmedium', sans-serif;
+    font-size: 17px;
+    color: #4a545d;
+}
+.autobox-list .autobox-what{
+	display: inline-block;
+	font: inherit;
+    vertical-align: baseline;
+}
+.autobox-list .autobox-info{
+    font-family: 'fira_sansbook';
+    font-size: 15px;
+    color: #4a545d;
+    padding-left: 19px;
+ }
+ .autobox-item .skills{
+ 	display: inline-block;
+ 	margin-left: 19px;
+ }
+ .autobox-item .skills-item{
+ 	display: inline-block;
+    padding: 2px 14px 2px 14px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    font-family: "fira_sabslight", sans-serif;
+    font-size: 13px;
+    color: #FFFFFF;
+    background: #33a5bd;
+    border-radius: 3px;
+ }
 /*Правая колона конец*/
+/*Образование и опыт начало*/
+.right-column-description{
+	background-color: #eff3f7;
+	margin-bottom: 26px;
+	padding-bottom: 45px;
+}
+.right-column-description h2{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	padding: 22px 0;
+	padding-left: 22px;
+	font-size: 27px;
+	font-family: "fira_sabslight", sans-serif;
+	color:#3ba8c0;
+}
+.right-column-description h2:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background: #3ba8c0;
+	height: 2px;
+	width: 210px;
+}
+.right-column-description .description-lyst{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	padding-left: 126px;
+
+}
+.description-lyst .description-item{
+	position: relative;
+	margin-top: 25px;
+	font-size: 17px;
+	line-height: 100%;
+}
+
+.description-lyst .description-item:before{
+	content: "";
+	position: absolute;
+	left:-71px;
+	
+	width: 36px;
+	height: 34px;
+	background: url(../img/bag.png) no-repeat;
+}
+.description-lyst .description-date{
+	font-size: 15px;
+	line-height: 100%;
+}
+/*Образование и опыт конец*/
 /*Прибьем футер к низу начало*/
 
 .wrapper{
