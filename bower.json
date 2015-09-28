@@ -1,0 +1,7 @@
+{
+  "name": "dz1",
+  "dependencies": {
+    "jquery": "2.1.1",
+    "modernizer": "~2.8.2"
+  }
+}
