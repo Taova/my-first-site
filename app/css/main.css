@@ -3,7 +3,7 @@ html{
 }
 body{
 	height: 100%;
-	font-family: "fira_sabslight", sans-serif;
+	font-family: 'fira_sansbook', sans-serif;
 	font-size: 17px;
 	color:#5a636b;
 	background-color:#eff3f7 ;
@@ -40,7 +40,7 @@ body{
 }
 .big-container .social-btn{
 	float: right;
-	wigth:305px;
+	width:305px;
 	
 }
 .social-btn a:first-child{
@@ -106,7 +106,7 @@ body{
 	text-decoration: none;
 	color:#bfc4cd;
 	font-size: 23px;
-	font-family: sans-serif;
+	font-family: 'fira_sansbook', sans-serif;
 	padding: 26px 0;
 	padding-left: 15px;
 	
@@ -116,10 +116,10 @@ body{
 }
 .left-column .navigation li{
 	margin:0 11px;
-	border-bottom: 2px solid #3ba8c0;
+	border-top: 2px solid #3ba8c0;
 }
-.left-column .navigation li:last-child{
-	border-bottom: none;
+.left-column .navigation li:first-child{
+	border-top: none;
 }
 .left-column .navigation .active{
 	background-color: #3ba8c0;
@@ -157,6 +157,7 @@ body{
 	padding: 11px 0;
 	padding-left: 21px;
 	font-size: 21px;
+	font-family: 'fira_sansbook', sans-serif;
 	background-color: #3ba8c0;
 	font-style: normal;
 	color: #fff;
@@ -213,8 +214,9 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size: 27px;
-	font-family: sans-serif;
+	font-family: 'fira_sansbook', sans-serif;
 	color: #3ba8c0;
+	font-weight: normal;
 	padding-top: 21px;
 	padding-bottom: 25px;
 	padding-left: 21px;
@@ -263,21 +265,22 @@ body{
     vertical-align: baseline;
 }
 .autobox-list .autobox-info{
-    font-family: 'fira_sansbook';
+    font-family: 'fira_sansbook', sans-serif;
     font-size: 15px;
     color: #4a545d;
     padding-left: 19px;
  }
  .autobox-item .skills{
  	display: inline-block;
- 	margin-left: 19px;
+ 	margin-left: 170px;
  }
+ 
  .autobox-item .skills-item{
  	display: inline-block;
     padding: 2px 14px 2px 14px;
     margin-left: 4px;
     margin-bottom: 3px;
-    font-family: "fira_sabslight", sans-serif;
+    font-family: 'proxima_nova_condensedlight';
     font-size: 13px;
     color: #FFFFFF;
     background: #33a5bd;
@@ -298,7 +301,7 @@ body{
 	padding: 22px 0;
 	padding-left: 22px;
 	font-size: 27px;
-	font-family: "fira_sabslight", sans-serif;
+	font-family: 'fira_sansbook', sans-serif;
 	color:#3ba8c0;
 }
 .right-column-description h2:after{
@@ -320,7 +323,8 @@ body{
 .description-lyst .description-item{
 	position: relative;
 	margin-top: 25px;
-	font-size: 17px;
+	font-size: 17px; 
+	font-family: 'fira_sansbook', sans-serif;
 	line-height: 100%;
 }
 
@@ -328,14 +332,15 @@ body{
 	content: "";
 	position: absolute;
 	left:-71px;
-	
 	width: 36px;
 	height: 34px;
 	background: url(../img/bag.png) no-repeat;
 }
+
 .description-lyst .description-date{
 	font-size: 15px;
 	line-height: 100%;
+	font-family: 'fira_sansultralight', sans-serif;
 }
 /*Образование и опыт конец*/
 /*Прибьем футер к низу начало*/
@@ -374,7 +379,8 @@ body{
 	margin: 0 180px;
 	text-align: center;
 	font-size: 13px;
-	font-family: "fira_sansbook", sans-serif;
+	color: #4a545d;
+	font-family: 'fira_sansultralight', sans-serif;
 }
 /*Прибьем футер к низу конец*/
 /*Логин*/
