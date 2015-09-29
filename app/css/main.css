@@ -283,7 +283,7 @@ body{
     font-family: 'proxima_nova_condensedlight';
     font-size: 13px;
     color: #FFFFFF;
-    background: #33a5bd;
+    background:linear-gradient(to bottom,#3ba8c0 50%,#2e8ca2 100%);
     border-radius: 3px;
  }
 /*Правая колона конец*/
@@ -370,7 +370,7 @@ body{
 	color: #4a545d;
 }
 .main-footer .page-footer{
-	padding-top: 23px;
+	padding-top: 35px;
 	position: relative;
 	width:960px;
 	margin: 0 auto;
@@ -388,6 +388,7 @@ body{
 	position: absolute;
 	left: 30px;
 	top: 26px;
+	text-indent: -9999px;
 }
 .main-footer .lock-inner{
 	display: block;
