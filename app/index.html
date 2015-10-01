@@ -3,11 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatibl" content="IE=edge">
-	<title>Workflow</title>
+	<title>Мой первый сайт</title>
 	<!-- SEO -->
-	<meta name="description" content="homework">
-	<meta name="keywords" content="уфф_еще_один_проект_проверять_надо((_ничего_нового;)">
+	<meta name="description" content="Сайт резюме Таовой Марины">
+	<meta name="keywords" content="taova.ru, taova, таова, таов">
 	<meta name="author" content="Taova Marina">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicon/manifest.json">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Мой первый сайт">
+	<meta name="application-name" content="Мой первый сайт">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<!-- bower Fonts -->
 	<link rel="stylesheet" href="font/fira.css">
 	<link rel="stylesheet" type="text/css" href="font/Proxi.css">
@@ -23,10 +40,10 @@
 	<!--[if It IE 7]>
 	<p class="browsehappy"> Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappe.com">обновите</a> его.</p>
 	<![endif] -->
-	<header class="main-header">
+	<header class="main-header clearfix">
 		<div class="big-container">
 			<a href="#" class="header-logo-link">
-				<img src="img/logo.png" alt="Логотип" height="42" width="243" class="logo">
+				<img src="img/logo.png" alt="Логотип" class="logo">
 				<span class="header-logo-text">Сайт портфолио</span>
 			</a>
 			<div class="social-btn">
@@ -39,7 +56,6 @@
 				<a href="#" class="social-git social">Наша страница гитхаб	</a>
 			</div>
 		</div>
-		<div class="clearfix"></div>
 	</header>
 	<div class="wrapper">
 		<div class="main">
@@ -54,10 +70,16 @@
 					</nav>
 					<address class="left-column-contact"> 
 							<div class="header-adress">Контакты</div>
-							<ul  class="contacts">
-								<li class="contacts-item mail">taova@yandex.ru</li>
-								<li class="contacts-item phone">+79150479676</li>
-								<li class="contacts-item skype">taova_marina</li>
+							<ul  class="contacts-list">
+								<li class="contacts-item">
+									<a href="mailto:taova@yandex.ru" class="contacts-link mail">taova@yandex.ru</a>
+								</li>
+								<li class="contacts-item">
+									<a href="tel:+79150479676" class="contacts-link phone">+79150478676</a>
+								</li>
+								<li class="contacts-item">
+									<a href="skype:taova_marina?chat" class="contacts-link skype">taova_marina</a>
+								</li>
 							</ul>
 					</address>
 
@@ -67,7 +89,7 @@
 							<h1 class="autobox-header">Основная информация</h1>
 							<div class="image-wrap">
 								<div class="avatar-box">
-									<img src="img/me.jpg" alt="Taova Marina" height="244" width="142">
+									<img class="main-img" src="img/me.jpg" alt="Taova Marina">
 								</div>
 							</div>
 							<div class="variable-content">
@@ -90,14 +112,13 @@
 									</li>
 									<li class="autobox-item clearfix">
 										<div class="autobox-what">Ключевые навыки:</div>
-										<div class="skills">
+										<div class="skills clearfix">
 											<div class="skills-item">html</div>
 											<div class="skills-item">css</div>
 											<div class="skills-item">javasript</div>
 											<div class="skills-item">gulp</div>
 											<div class="skills-item">git</div>
-										</div>
-									</li>
+										</li>
 								</ul>						
 							</div>
 						
@@ -105,25 +126,29 @@
 					<div class="right-column-description">
 						<h2 class="right-column-header">Опыт работы</h2>
 						<ul class="description-lyst">
-							<li class="description-item bag-icon">"Пандора" младший программист</li>
-							<li class="description-date">март 2013-июль 2014</li>
-							<li class="description-item bag-icon">
-								"Аквабьюти" Контент-менеджер</li>
-							<li class="description-date">июль 2015</li>
+							<li class="description bag-icon">
+								<div class="description-item">"Пандора" младший программист</div>
+								<div class="description-date">март 2013-июль 2014</div>
+							</li>
+							<li class="description bag-icon">
+								<div class="description-item">"Аквабьюти" Контент-менеджер</div>
+								<div class="description-date">июль 2015</div>
+							</li>
 						</ul>
 					</div>
 					<div class="right-column-description">
 						<h2 class="right-column-header">Образование</h2>
 						<ul class="description-lyst">
-							<li class="description-item hat-icon">МГОУ им Черномырдина</li>
-							<li class="description-date">сентябрь 2008-июль 2013</li>
-							<li class="description-item paper-icon">
-								Курсы htmlacademy.ru
+							<li class="description hat-icon">
+								<div class="description-item">МГОУ им Черномырдина</div>
+								<div class="description-date">сентябрь 2008-июль 2013</div>
 							</li>
-							<li class="description-date">апрель 2015</li>
+							<li class="description paper-icon">
+								<div class="description-item">Курсы htmlacademy.ru</div>
+								<div class="description-date">апрель 2015</div>
+							</li>
 						</ul>
 					</div>
-					
 				</div>
 			</div>
 		</div>

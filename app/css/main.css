@@ -6,7 +6,7 @@ body{
 	font-family: 'fira_sansbook', sans-serif;
 	font-size: 17px;
 	color:#5a636b;
-	background-color:#eff3f7 ;
+	background: url(../img/comppattern2.png);
 }
 .clearfix:after{
 	content: '';
@@ -14,7 +14,6 @@ body{
 	display: table;
 }
 .main{
-	background-image: url(../img/comppattern2.png);
 	padding: 40px 0;
 }
 .container{
@@ -22,7 +21,7 @@ body{
 	margin: 0 auto;
 }
 .main-header{
-	background:url(../img/line.png) bottom center no-repeat;
+	background:#eff3f7 url(../img/line.png) bottom center no-repeat;
 	padding-top: 36px;
 	padding-bottom: 40px;
 }
@@ -32,6 +31,8 @@ body{
 	margin: 0 auto;
 }
 .big-container .header-logo-link{
+	height: 42px;
+	width: 243px;
 	float:left;
 }
 .header-logo-link .header-logo-text{
@@ -107,7 +108,8 @@ body{
 	color:#bfc4cd;
 	font-size: 23px;
 	font-family: 'fira_sansbook', sans-serif;
-	padding: 26px 0;
+	height: 75px;
+	line-height: 75px;
 	padding-left: 15px;
 	
 }
@@ -133,69 +135,53 @@ body{
 }
 /*Навигация конец*/
 .left-column .left-column-contact{
-	background-color: #41b9d4;
+	background-color: #3ba8c0;
 	border-radius: 4px;
 	overflow: hidden;
 	margin-bottom: 23px;
+	font-style: normal;
+	color:white;
 
 } 
+.left-column-contact .header-adress{
+	padding-left: 21px;
+	font-size: 21px;
+	font-family: 'fira_sansbook', sans-serif;
+	height: 40px;
+	line-height: 40px;
+}
 .left-column-contact ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.left-column-contact .contacts li{
-	position: relative;
-	color: #fff;
+.contacts-list .contacts-link{
+	display: block;
+	text-decoration: none;
+	color:white;
 	font-size: 17px;
-	font-family: "fira_sabslight", sans-serif;
-	padding: 11px 0;
-	padding-left: 82px;
-	font-style: normal;
+	font-family: FSBook;
+	padding-left: 83px;
+	background-repeat: no-repeat;
+	height: 40px;
+	line-height: 40px;
+
 }
-.left-column-contact .header-adress{
-	padding: 11px 0;
-	padding-left: 21px;
-	font-size: 21px;
-	font-family: 'fira_sansbook', sans-serif;
-	background-color: #3ba8c0;
-	font-style: normal;
-	color: #fff;
+.contacts-link.mail{
+	background: #41b9d4 url(../img/mail.png) 42px 10px no-repeat;
+	
+
 }
-.left-column-contact .contacts li:hover{
+.contacts-link.phone{
+	background: #48cbe8 url(../img/phone.png) 42px 10px no-repeat;
+	
+}
+.contacts-link.skype{
+	background: #51daf8 url(../img/skype.png) 42px 10px no-repeat;
+}
+.left-column-contact .contacts-list li:hover{
 	text-decoration: underline;
 	cursor: pointer;
-	background-color: #48cbe8;
-}
-.left-column-contact .mail:before{
-	content: "";
-	position: absolute;
-	left:40px;
-	top: 10px;
-	background: url(../img/mail.png) no-repeat;
-	color: #000;
-	width:21px ;
-	height:16px ;
-}
-.left-column-contact .phone:before{
-	content: "";
-	position: absolute;
-	left:40px;
-	top: 10px;
-	background: url(../img/phone.png) no-repeat;
-	color: #000;
-	width:21px ;
-	height:23px ;
-}
-.left-column-contact .skype:before{
-	content: "";
-	position: absolute;
-	left:40px;
-	top: 10px;
-	background: url(../img/skype.png) no-repeat;
-	color: #000;
-	width:20px ;
-	height:20px ;
 }
 
 /*Контакты конец*/
@@ -208,6 +194,7 @@ body{
 	background-color: #eff3f7;
 	margin-bottom: 27px;
 	padding-bottom: 45px;
+	border-radius: 4px;
 }
 .right-column-main h1{
 	position: relative;
@@ -245,6 +232,9 @@ body{
 	overflow: hidden;
 	border: 5px solid #3ba8c0;
 }
+.avatar-box .main-img{
+	width: 100%;
+}
 .right-column .variable-content{
 	float: right;
 	width: 400px;
@@ -270,20 +260,29 @@ body{
     color: #4a545d;
     padding-left: 19px;
  }
- .autobox-item .skills{
+  .autobox-item .skills{
  	display: inline-block;
- 	margin-left: 170px;
+	max-width: 210px;
+ 	padding-left:20px;
+ 	font-size: 0;
  }
  
  .autobox-item .skills-item{
- 	display: inline-block;
-    padding: 2px 14px 2px 14px;
+ 	display: block;
+ 	vertical-align: center;
+ 	float:left;
+ 	overflow: hidden;
+    padding: 2px 14px;
     margin-left: 4px;
     margin-bottom: 3px;
     font-family: 'proxima_nova_condensedlight';
     font-size: 13px;
-    color: #FFFFFF;
-    background:linear-gradient(to bottom,#3ba8c0 50%,#2e8ca2 100%);
+    color: #FFFFFF;   
+    background: -webkit-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+    background: -moz-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+    background: -ms-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+    background: -o-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
+    background: linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
     border-radius: 3px;
  }
 /*Правая колона конец*/
@@ -313,34 +312,41 @@ body{
 	height: 2px;
 	width: 210px;
 }
+.right-column-description{
+	border-radius: 4px;
+}
+.description.bag-icon{
+	background: url(../img/bag.png) no-repeat;
+	background-position: 55px 50%;
+}
+.description.hat-icon{
+	background: url(../img/hat.png) no-repeat;
+	background-position: 52px 50%;
+
+}
+.description.paper-icon{
+	background: url(../img/paper.png) no-repeat;
+	background-position: 61px 50%;
+}
 .right-column-description .description-lyst{
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	padding-left: 126px;
-
 }
-.description-lyst .description-item{
-	position: relative;
+.description-lyst .description{
 	margin-top: 25px;
 	font-size: 17px; 
 	font-family: 'fira_sansbook', sans-serif;
-	line-height: 100%;
+	min-height: 34px;
 }
-
-.description-lyst .description-item:before{
-	content: "";
-	position: absolute;
-	left:-71px;
-	width: 36px;
-	height: 34px;
-	background: url(../img/bag.png) no-repeat;
+.description-item, .description-date{
+	padding-left: 114px;
 }
 
 .description-lyst .description-date{
 	font-size: 15px;
-	line-height: 100%;
-	font-family: 'fira_sansultralight', sans-serif;
+	line-height: 15px;
+	font-family: 'fira_sanslight', sans=serif;
 }
 /*Образование и опыт конец*/
 /*Прибьем футер к низу начало*/
@@ -365,7 +371,7 @@ body{
 
 /*Футер*/
 .main-footer{
-	background:url(../img/line.png) top center no-repeat;
+	background:#eff3f7 url(../img/line.png) top center no-repeat;
 	font-family: "fira_sabslight", sans-serif;
 	color: #4a545d;
 }
@@ -380,7 +386,7 @@ body{
 	text-align: center;
 	font-size: 13px;
 	color: #4a545d;
-	font-family: 'fira_sansultralight', sans-serif;
+	font-family: 'fira_sanslight', sans-serif;
 }
 /*Прибьем футер к низу конец*/
 /*Логин*/
