@@ -273,7 +273,7 @@ body{
  
  .autobox-item .skills-item{
  	display: inline-block;
- 	vertical-align: center;
+ 	vertical-align: middle;
  	float:left;
  	overflow: hidden;
     padding: 2px 14px;
@@ -351,7 +351,7 @@ body{
 .description-lyst .description-date{
 	font-size: 15px;
 	line-height: 15px;
-	font-family: 'fira_sanslight', sans=serif;
+	font-family: 'fira_sanslight', sans-serif;
 }
 /*Образование и опыт конец*/
 /*Прибьем футер к низу начало*/
