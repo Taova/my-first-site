@@ -264,30 +264,35 @@ body{
     color: #4a545d;
     padding-left: 19px;
  }
-  .autobox-item .skills{ 	
- 	float: left;
-	max-width: 210px;
- 	padding-left:20px;
- 	font-size: 0;
+  .autobox-item .skills{ 
+  	font-size: 0;
+  	padding: 0;
+  	margin: 0;
+	padding-left: 20px;
+ 	width: 200px;
+    box-sizing: border-box;
+   
  }
- 
- .autobox-item .skills-item{
- 	display: inline-block;
- 	vertical-align: middle;
- 	float:left;
- 	overflow: hidden;
-    padding: 2px 14px;
-    margin-left: 4px;
-    margin-bottom: 3px;
+ .scill, .skills {
+    display: inline-block;
+    vertical-align: top;
+}
+ .autobox-item .scill{
+ 	font-size: 14px;
+    line-height: 20px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    color: #fff;
+    padding: 0 12px;
+    background: #3ba8c0;
     font-family: 'proxima_nova_condensedlight';
-    font-size: 13px;
-    color: #FFFFFF;   
     background: -webkit-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
     background: -moz-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
     background: -ms-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
     background: -o-linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
     background: linear-gradient(#3ba8c0 50%, #2e8ca2 50%);
-    border-radius: 3px;
+    
  }
 /*Правая колона конец*/
 /*Образование и опыт начало*/
