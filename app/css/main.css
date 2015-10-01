@@ -14,7 +14,8 @@ body{
 	display: table;
 }
 .main{
-	padding: 40px 0;
+	padding-top: 40px;
+	padding-bottom: 14px;
 }
 .container{
 	width:960px;
@@ -22,8 +23,8 @@ body{
 }
 .main-header{
 	background:#eff3f7 url(../img/line.png) bottom center no-repeat;
-	padding-top: 36px;
-	padding-bottom: 40px;
+	padding-top: 34px;
+	padding-bottom:32px;
 }
 .big-container {
 	min-width: 960px;
@@ -41,8 +42,7 @@ body{
 }
 .big-container .social-btn{
 	float: right;
-	width:305px;
-	
+	width:260px;
 }
 .social-btn a:first-child{
 	margin-left: 0;
@@ -51,7 +51,7 @@ body{
 	float:left;
 	width:47px ;
 	height:47px ;
-	margin-left: 19px;
+	margin-left: 24px;
 	background: url(../img/sprite.png) no-repeat;
 	text-decoration: none;
 	font-size: 0;
@@ -106,11 +106,11 @@ body{
 	display: block;
 	text-decoration: none;
 	color:#bfc4cd;
-	font-size: 23px;
+	font-size: 21px;
 	font-family: 'fira_sansbook', sans-serif;
-	height: 75px;
-	line-height: 75px;
-	padding-left: 15px;
+	height: 71px;
+	line-height: 71px;
+	padding-left: 16px;
 	
 }
 .left-column .navigation a:hover{
@@ -126,6 +126,7 @@ body{
 .left-column .navigation .active{
 	background-color: #3ba8c0;
 	margin:0;
+	font-size: 23px;
 	padding-left: 11px;
 	margin-bottom: -2px;
 }
@@ -160,7 +161,7 @@ body{
 	text-decoration: none;
 	color:white;
 	font-size: 17px;
-	font-family: FSBook;
+	font-family: 'fira_sansbook', sans-serif;
 	padding-left: 83px;
 	background-repeat: no-repeat;
 	height: 40px;
@@ -196,7 +197,7 @@ body{
 	padding-bottom: 45px;
 	border-radius: 4px;
 }
-.right-column-main h1{
+.right-column-main .autobox-header{
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -204,10 +205,10 @@ body{
 	font-family: 'fira_sansbook', sans-serif;
 	color: #3ba8c0;
 	font-weight: normal;
-	padding-top: 21px;
-	padding-bottom: 25px;
+	height: 67px;
+	line-height: 67px;
 	padding-left: 21px;
-	margin-bottom: 23px;
+	margin-bottom: 19px;
 }
 .right-column-main .autobox-header:after{
 	content: "";
@@ -220,6 +221,7 @@ body{
 	
 }
 .right-column .image-wrap{
+	margin-top: 16px;
 	float:left;
 	width: 205px;
 	
@@ -236,8 +238,9 @@ body{
 	width: 100%;
 }
 .right-column .variable-content{
-	float: right;
-	width: 400px;
+	float: left;
+	width: 370px;
+	margin-left: 24px;
 }
 .variable-content .autobox-list{
 	list-style: none;
@@ -248,9 +251,10 @@ body{
 	font-family: 'fira_sansmedium', sans-serif;
     font-size: 17px;
     color: #4a545d;
+    margin-bottom: 6px;
 }
 .autobox-list .autobox-what{
-	display: inline-block;
+	display: inline;
 	font: inherit;
     vertical-align: baseline;
 }
@@ -260,15 +264,15 @@ body{
     color: #4a545d;
     padding-left: 19px;
  }
-  .autobox-item .skills{
- 	display: inline-block;
+  .autobox-item .skills{ 	
+ 	float: left;
 	max-width: 210px;
  	padding-left:20px;
  	font-size: 0;
  }
  
  .autobox-item .skills-item{
- 	display: block;
+ 	display: inline-block;
  	vertical-align: center;
  	float:left;
  	overflow: hidden;
@@ -289,21 +293,22 @@ body{
 /*Образование и опыт начало*/
 .right-column-description{
 	background-color: #eff3f7;
+	padding-bottom: 42px;
 	margin-bottom: 26px;
-	padding-bottom: 45px;
 }
-.right-column-description h2{
+.right-column-description .right-column-header{
 	position: relative;
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	padding: 22px 0;
+	height: 67px;
+	line-height: 67px;
 	padding-left: 22px;
 	font-size: 27px;
 	font-family: 'fira_sansbook', sans-serif;
 	color:#3ba8c0;
 }
-.right-column-description h2:after{
+.right-column-description .right-column-header:after{
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -334,7 +339,7 @@ body{
 	list-style: none;
 }
 .description-lyst .description{
-	margin-top: 25px;
+	margin-top: 20px;
 	font-size: 17px; 
 	font-family: 'fira_sansbook', sans-serif;
 	min-height: 34px;
