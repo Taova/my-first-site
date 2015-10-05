@@ -486,3 +486,110 @@ body{
 	color: #fff; 
 }
 /*Авторизация конец*/
+/*contacts.html начало*/
+.right-column.contactpage{
+	border-radius: 4px;
+	overflow: hidden;
+}
+.right-column .contact-form{
+	min-height: 618px;
+}
+.right-column .right-column-title{
+	padding: 0;
+	margin:0;
+	text-align: center;
+	height: 118px;
+	line-height: 118px;
+	font-size: 27px;
+	font-family: 'fira_sansbook', sans-serif;
+	color: #fff;
+	font-weight: normal;
+	background-color: #48cbe8;
+	border-bottom: 14px solid #67dffa;
+}
+.right-column .right-column-main{
+	background-color: #eff3f7;
+	padding: 42px 120px;
+}
+.contact-form-name-label{
+	float: left;
+	width: 192px;
+}
+.contact-form-name-label, .contact-form-email-label{
+	margin-bottom: 15px;
+}
+.contact-form-email-label{
+	float: right;
+	width: 192px;
+}
+.contact-form .form-text{
+	margin: 0;
+	padding: 0;
+	font-size: 19px;
+	font-family: 'fira_sanslight', sans-serif; 
+	color:#959aa8;
+}
+.contact-form .contact-form-name, 
+.contact-form .contact-form-email,
+.textarea, .captcha-input
+{ 
+	padding: 0;
+	margin: 0;
+	width: 182px;
+	border:1px solid #48cbe8;
+	border-radius: 4px;
+	line-height: 38px;
+	height: 38px;
+	padding-left: 8px;
+	font-size: 13px;
+
+}
+.contact-form-textarea .textarea{
+	width: 400px;
+	padding-top: 12px;
+	line-height: 13px;
+	min-height: 168px;
+}
+.patcha .patcha-code{
+	width: 188px;
+	display: inline-block;
+	border: 1px solid #48cbe8;
+	background-color: #fbfcfd;
+	height: 76px;
+	line-height: 76px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 43px;
+	font-family: 'ogilvie_cyrregular', sans-serif;
+}
+.patcha .captcha-input{
+	float: right;
+	margin-top: 17px;
+}
+.contact-form .patcha{
+	margin-bottom: 20px;
+}
+.contact-form-btn .btn,
+.contact-form-btn .clear-btn{
+	height: 32px;
+	line-height: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #48cbe8;
+	border-radius: 4px;
+	border-bottom: 1px solid #3ba8c0;
+	color: #fff;
+	font-size: 19px;
+	font-family: 'fira_sansbook', sans-serif;
+}
+.contact-form-btn .btn{
+	float: left;
+}
+.contact-form-btn .clear-btn{
+	float: right;
+}
+.contact-form-btn .btn:hover,
+.contact-form-btn .clear-btn:hover{
+	background-color:#849db5;
+}
+/*contacts.html конец*/

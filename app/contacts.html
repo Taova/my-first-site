@@ -26,12 +26,12 @@
 	<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 	<!-- bower Fonts -->
+	<link rel="stylesheet" href="font/ogilvie_cyrregular.css">
 	<link rel="stylesheet" href="font/fira.css">
-	<link rel="stylesheet" type="text/css" href="font/Proxi.css">
+	<link rel="stylesheet" href="font/Proxi.css">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<!-- CSS -->
-	<link rel="stylesheet" href="font/ogilvie_cyrregular.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/about-me.css">
 	<!-- modernizr -->
@@ -66,9 +66,9 @@
 				<div class="left-column">
 					<nav class="navigation">
 						<ul class="navigation-list">
-							<li class="navigation-item active"><a href="#">Обо мне</a></li>
+							<li class="navigation-item"><a href="#">Обо мне</a></li>
 							<li class="navigation-item"><a href="#">Мои работы</a></li>
-							<li class="navigation-item"><a href="contacts.html">Связаться со мной</a></li>
+							<li class="navigation-item active"><a href="#">Связаться со мной</a></li>
 						</ul>
 					</nav>
 					<address class="left-column-contact"> 
@@ -87,6 +87,43 @@
 					</address>
 
 				</div>
+				<div class="right-column">
+					<h2 class="right-column-title">
+						У вас есть интересный проект? Напишите мне
+					</h2>
+					<div class="right-column-main">
+						<form class="contact-form" action="/echo" method="post">
+							<label class="contact-form-name-label">
+								<p class="form-text">Имя</p>
+								<input type="text" class="contact-form-name" id="contact-form-name" name="name" value="" placeholder="Как в вам обращаться">
+							</label>
+              				<label class="contact-form-email-label">
+	              				<p class="form-text">Email</p>
+	              				<input type="text" class="contact-form-email" id="contact-form-email" name="email" value="" placeholder="Куда мне писать">
+              				</label>
+              				<label class="contact-form-textarea">
+              				<p class="form-text">Сообщение</p>
+              				<textarea  class="textarea" id="contact-form-textarea" class="textarea" name="message" id="message" placeholder="Кратко в чем суть?"></textarea>	
+              				</label>		
+              				<div class="patcha">
+								<p class="form-text">Введите код указанный на картинке</p>
+								<label>
+									<div class="patcha-code">
+										E0Ed3r
+									</div>
+									<input class="captcha-input" value="" type="text" name="name" id="name" placeholder="Введите код">
+								</label>
+							</div>
+							<div class="contact-form-btn clearfix">
+								<button type="submit" class="btn">Отправить</button>
+								<button type="submit" class="clear-btn">Очистить</button>
+							</div>
+						</form>
+					</div>
+				
+				</div>
+
+				<!--
 				<div class="right-column">
 					<div class="right-column-main clearfix">
 							<h1 class="autobox-header">Основная информация</h1>
@@ -152,7 +189,7 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
