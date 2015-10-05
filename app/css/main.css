@@ -421,3 +421,68 @@ body{
 .main-footer .lock-inner:hover{
 	background: url(../img/lock-cheked.png) no-repeat;
 }
+
+/*Авторизация начало*/
+.modal-content{
+	display:none;
+	position: fixed;
+ 	bottom:0;
+  	left: 50%;
+	width: 590px;
+	margin-bottom: 150px;
+	margin-left: -295px;
+	color:#959aa8;
+	background-color: #eff3f7;
+	box-shadow: 0 30px 50px rgba(0,0,0,.7);
+}
+.modal-content .modal-content-title{
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+	font-family: 'fira_sansbook', sans-serif;
+	font-weight: normal;
+	color: #fff;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	background-color: #48cbe8;
+	border-bottom: 14px solid #67dffa;
+}
+.modal-content .login-form{
+	padding: 26px 87px 26px 81px;
+}
+.modal-content .login-form label{
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-family: 'fira_sanslight', sans-serif;
+}
+.login-form .login-password,
+.login-form .login-name{
+	margin: 0;
+	padding: 0;
+	width:390px;
+	padding: 19px 16px;
+
+	font-family: 'fira_sanslight', sans-serif;
+	font-size: 17px;
+	color: #48cbe8;
+	border: 1px solid #48cbe8;
+	margin-bottom: 23px;
+
+}
+.login-form .btn{
+	margin-left: 97px;
+	height: 53px;
+	line-height: 53px;
+	padding-left:62px;
+	padding-right: 62px;
+	background-color: #48cbe8;
+	border-radius: 4px;
+	border-bottom: 4px solid #3dadc5;
+	font-size: 36px;
+	font-family:'fira_sansbook', sans-serif;
+	color: #fff; 
+}
+/*Авторизация конец*/
