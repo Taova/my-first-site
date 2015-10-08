@@ -424,7 +424,6 @@ body{
 
 /*Авторизация начало*/
 .modal-content{
-	display:none;
 	position: fixed;
  	bottom:0;
   	left: 50%;
@@ -509,6 +508,7 @@ body{
 .right-column .right-column-content{
 	background-color: #eff3f7;
 	padding: 42px 120px;
+	margin-bottom: 30px;
 }
 .contact-form-name-label{
 	float: left;
@@ -571,6 +571,7 @@ body{
 }
 .contact-form-btn .btn,
 .contact-form-btn .clear-btn{
+	border:none;
 	height: 32px;
 	line-height: 32px;
 	padding-left: 20px;
@@ -581,6 +582,7 @@ body{
 	color: #fff;
 	font-size: 19px;
 	font-family: 'fira_sansbook', sans-serif;
+	box-shadow: 0 4px #3ba8c0;
 }
 .contact-form-btn .btn{
 	float: left;
@@ -591,6 +593,8 @@ body{
 .contact-form-btn .btn:hover,
 .contact-form-btn .clear-btn:hover{
 	background-color:#849db5;
+	border:none;
+	box-shadow: 0 4px #687b8f;
 }
 /*contacts.html конец*/
 /*mywork.html начало*/
@@ -791,6 +795,15 @@ body{
     box-sizing: border-box;
     padding-left: 20px;
     color: #48cbe8;
+ }
+ .popup-input.pop-img{
+ 	background-image: url(../img/download-img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+ }
+ .popup-input.popup-img{
+ 	display: none;
+ 	cursor: pointer;
  }
  .popup-form-item .popup-textarea{
  	border-radius: 2px;

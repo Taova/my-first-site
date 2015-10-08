@@ -160,19 +160,6 @@
 		</div>	
 	</footer>
 
-	<!-- Авторизация-->
-	<div class="modal-content">
-		<h2 class="modal-content-title">
-			Авторизация
-		</h2>
-		<form class="login-form" action="/echo" method="post">
-			<label for="login-name">Логин</label>
-			<input type="text" class="login-name" id="login-name" name="login" placeholder="Введите логин" required>
-			<label for="login-password">Пароль</label>
-       		 <input type="password" class="login-password" id="login-password" name="password" placeholder="Введите пароль" required>
-			 <button type="submit" class="btn">Войти</button>
-		</form>
-	</div>
 	<!-- Добавление проекта начало-->
 	<div class="popup-add">
 		<form  action="/echo" method="post" class="popup" id="popup">
@@ -188,12 +175,13 @@
 					<label class="popup-form-lbl">Название проекта</label>
 					<input type="text" name="name-project" placeholder="Введите название" class="popup-input">
 					<label class="popup-form-lbl">Картинка проекта</label>
-					<input type="file" name="file-project" placeholder="Загрузите картинку" class="popup-input popup-img">
+					<input type="text" name="name-file-project" placeholder="Загрузите картинку" class="popup-input pop-img">
+					<input type="file" name="file-project" class="popup-input popup-img">
 					<label class="popup-form-lbl">URL проекта</label>
-					<input type="text" name="name-project" placeholder="Добавьте ссылку" class="popup-input">
+					<input type="text" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
 					<label class="popup-form-lbl">Описание</label>
 					<textarea class="popup-textarea" name="popup-textarea" placeholder="Пара слов о вашем проекте"></textarea>
-					<buttom class="popup-buttom">Добавить</buttom>
+					<buttom class="popup-buttom" type="submit">Добавить</buttom>
 				</div>
 			</div>
 		</form>

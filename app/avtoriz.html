@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatibl" content="IE=edge">
+	<title>Мой первый сайт</title>
+	<!-- SEO -->
+	<meta name="description" content="Сайт резюме Таовой Марины">
+	<meta name="keywords" content="taova.ru, taova, таова, таов">
+	<meta name="author" content="Taova Marina">
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicon/manifest.json">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="apple-mobile-web-app-title" content="Мой первый сайт">
+	<meta name="application-name" content="Мой первый сайт">
+	<meta name="msapplication-TileColor" content="#ffc40d">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- bower Fonts -->
+	<link rel="stylesheet" href="font/ogilvie_cyrregular.css">
+	<link rel="stylesheet" href="font/fira.css">
+	<link rel="stylesheet" href="font/Proxi.css">
+	<!-- bower CSS -->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/about-me.css">
+	<!-- modernizr -->
+	<script src="bower/modernizer/modernizr.js"></script>	
+</head>
+<body>
+	<!--[if It IE 7]>
+	<p class="browsehappy"> Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappe.com">обновите</a> его.</p>
+	<![endif] -->
+	
+	<div class="wrapper">
+
+
+	<!-- Авторизация-->
+	<div class="modal-content">
+		<h2 class="modal-content-title">
+			Авторизация
+		</h2>
+		<form class="login-form" action="/echo" method="post">
+			<label for="login-name">Логин</label>
+			<input type="text" class="login-name" id="login-name" name="login" placeholder="Введите логин" required>
+			<label for="login-password">Пароль</label>
+       		 <input type="password" class="login-password" id="login-password" name="password" placeholder="Введите пароль" required>
+			 <button type="submit" class="btn" type="submit">Войти</button>
+		</form>
+	</div></div>
+	<footer class="main-footer">
+		<div class="page-footer">
+			<div class="lock">
+				<a href="#" class="lock-inner">Вход</a>
+			</div>
+			<div class="copyright">
+				&#169;2015, Это сайт Таовой Марины, пожалуйста, не копируйте и не воруйте его
+			</div>
+		</div>	
+	</footer>
+
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+	</html>
