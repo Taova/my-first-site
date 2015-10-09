@@ -423,10 +423,13 @@ body{
 }
 
 /*Авторизация начало*/
+.wrapper .add-modal-content{
+	position: absolute;
+	top: 10%;
+}
 .modal-content{
 	position: fixed;
-	top:5%;
- 	bottom:0;
+
   	left: 50%;
 	width: 590px;
 	margin-bottom: 150px;
