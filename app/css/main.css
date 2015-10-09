@@ -736,7 +736,6 @@ body{
 	padding-right: 50px;
 	border-bottom: 10px solid #67dffa;
 	margin-bottom: 10px;
-	
 }
 
  .popup-header .popup-close:after{
@@ -762,6 +761,11 @@ body{
 	font-family: 'fira_sansbook';
 	margin-bottom: 10px;
 }
+.popup-error.success-mes{
+	background-color: #b8e1ce;
+	border: 1px solid #49bb7b;
+	color: #49bb7b;
+}
 .popup-error .pop-error, .popup-error .po-error{
 	padding: 0;
 	margin: 0;
@@ -773,7 +777,7 @@ body{
 .popup-error .po-error{
 	font-size: 15px;
 }
-.popup .popup-error:after{
+.popup .error-mes:after{
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -781,6 +785,15 @@ body{
 	width: 10px;
 	height: 10px;
 	background: url(../img/form-error.png);
+}
+.popup .success-mes:after{
+	content: "";
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 10px;
+	height: 10px;
+	background: url(../img/form-error-green.png);
 }
 .popup-form-item .popup-form-lbl{
 	display: block;

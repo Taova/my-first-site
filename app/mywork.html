@@ -162,16 +162,21 @@
 
 	<!-- Добавление проекта начало-->
 	<div id="new-project-popup" class="popup-add">
-		<form  action="/echo" method="post" class="popup" id="popup">
+		<form  action="/echo" method="post" class="popup" id="add-new-project">
 			<div class="popup-header">
 				<span>Добавление проекта</span>
 				<div class="popup-close b-close"></div>
 			</div>
 			<div class="popup-form-wrapper">
-				<div class="popup-error">
+				<div class="popup-error error-mes">
 					<h2 class="pop-error">Ошибка!</h2>
 					<p class="po-error">Невозможно добавить проект.</p>
 				</div>
+				<div class="popup-error success-mes">
+					<h2 class="pop-error">Ошибка!</h2>
+					<p class="po-error">Невозможно добавить проект.</p>
+				</div>
+				
 				<div class="popup-form-item">
 					<label class="popup-form-lbl">Название проекта</label>
 					<input type="text" name="name-project" placeholder="Введите название" class="popup-input">
@@ -182,7 +187,7 @@
 					<input type="text" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
 					<label class="popup-form-lbl">Описание</label>
 					<textarea class="popup-textarea" name="popup-textarea" placeholder="Пара слов о вашем проекте"></textarea>
-					<buttom class="popup-buttom" type="submit">Добавить</buttom>
+					<button class="popup-buttom" type="submit">Добавить</button>
 				</div>
 			</div>
 		</form>
