@@ -132,7 +132,7 @@
 								<p class="img-decript">Информация о проекте 4 превью 2 строки....</p>
 							</section>
 							<section class="gallery-lyst">
-								<a class="gallery-item add">	
+								<a  id="add-new-item" class="gallery-item add">	
 									<img  class="add-gallery-img" src="img/add-img-project.png">
 									<div class="add-text-project">
 										Добавить проект
@@ -152,7 +152,7 @@
 	<footer class="main-footer">
 		<div class="page-footer">
 			<div class="lock">
-				<a href="#" class="lock-inner">Вход</a>
+				<a href="avtoriz.html" class="lock-inner">Вход</a>
 			</div>
 			<div class="copyright">
 				&#169;2015, Это сайт Таовой Марины, пожалуйста, не копируйте и не воруйте его
@@ -161,10 +161,11 @@
 	</footer>
 
 	<!-- Добавление проекта начало-->
-	<div class="popup-add">
+	<div id="new-project-popup" class="popup-add">
 		<form  action="/echo" method="post" class="popup" id="popup">
 			<div class="popup-header">
 				<span>Добавление проекта</span>
+				<div class="popup-close b-close"></div>
 			</div>
 			<div class="popup-form-wrapper">
 				<div class="popup-error">
@@ -188,6 +189,8 @@
 	</div>
 	<!-- Добавление проекта конец-->
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src='js/app_progect.js'></script>
 	<script src="js/main.js"></script>
 	
 </body>

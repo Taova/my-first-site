@@ -425,6 +425,7 @@ body{
 /*Авторизация начало*/
 .modal-content{
 	position: fixed;
+	top:5%;
  	bottom:0;
   	left: 50%;
 	width: 590px;
@@ -707,11 +708,12 @@ body{
 /*mywork.html конец*/
 /*Модальное окно добавить проект начало*/
 .popup-add{
-	
+	display: none;
 	margin: 0 auto;
 	width: 365px;
 }
 .popup-add .popup{
+
 	z-index: 300;
 	position: fixed;
 	width: 360px;
@@ -734,8 +736,10 @@ body{
 	padding-right: 50px;
 	border-bottom: 10px solid #67dffa;
 	margin-bottom: 10px;
+	
 }
-.popup .popup-header:after{
+
+ .popup-header .popup-close:after{
 	content: '';
 	position: absolute;
 	top: 10px;
