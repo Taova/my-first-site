@@ -67,7 +67,7 @@ var myModule=(function() {
 			data: data
 		}).fail(function(ans) {
 			console.log("Проблемы в PHP");
-			fond.find('.popup-error').text('На сервере произвошла ошибка').show();
+			form.find('.popup-error').text('На сервере произвошла ошибка').show();
 		});
 	return result;
 	};
