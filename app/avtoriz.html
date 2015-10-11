@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="font/Proxi.css">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/about-me.css">
@@ -51,12 +52,12 @@
 			<h2 class="modal-content-title">
 				Авторизация
 			</h2>
-			<form class="login-form" action="/echo" method="post">
+			<form class="login-form" id="login-form" action="/echo" method="post">
 				<label for="login-name">Логин</label>
-				<input type="text" class="login-name" id="login-name" name="login" placeholder="Введите логин" required>
+				<input type="text" qtip-content="Вы не ввели логин" qtip-position='left' class="login-name" id="login-name" name="login" placeholder="Введите логин" required>
 				<label for="login-password">Пароль</label>
-	       		 <input type="password" class="login-password" id="login-password" name="password" placeholder="Введите пароль" required>
-				 <button type="submit" class="btn" type="submit">Войти</button>
+	       		 <input type="password" qtip-content="Вы не ввели пароль" qtip-position='left' class="login-password" id="login-password" name="password" placeholder="Введите пароль" required>
+				 <button type="submit" class="btn" >Войти</button>
 			</form>
 		</div>
 	</div>	
@@ -71,8 +72,13 @@
 			</div>
 		</div>	
 	</footer>
-
-	<script src="bower/jquery/dist/jquery.js"></script>
+	<!-- Добавление проекта конец-->
+	<script src="bower/jquery/dist/jquery.js"></script>	
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src='js/app_progect.js'></script>
+	<script src="js/validation.js"></script>
+	<script src="js/avtoriz.js"></script>
 	<script src="js/main.js"></script>
 	</body>
 	</html>

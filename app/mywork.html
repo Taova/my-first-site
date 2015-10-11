@@ -180,24 +180,25 @@
 				
 				<div class="popup-form-item">
 					<label class="popup-form-lbl">Название проекта</label>
-					<input type="text" name="name-project" placeholder="Введите название" class="popup-input">
+					<input type="text"  qtip-position="left" qtip-content="Вы не ввели название" name="name-project" placeholder="Введите название" class="popup-input">
 					<label class="popup-form-lbl">Картинка проекта</label>
-					<input type="text" name="name-file-project" placeholder="Загрузите картинку" class="popup-input pop-img">
-					<input type="file" name="file-project" class="popup-input popup-img">
+					<input type="text" qtip-position="left" qtip-content="Загрузите картинку" name="name-file-project" placeholder="Загрузите картинку" class="popup-input pop-img">
+					<input type="file"  name="file-project" class="popup-input popup-img">
 					<label class="popup-form-lbl">URL проекта</label>
-					<input type="text" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
+					<input type="text"  qtip-position="left" qtip-content="Вы не добавили ссылку" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
 					<label class="popup-form-lbl">Описание</label>
-					<textarea class="popup-textarea" name="popup-textarea" placeholder="Пара слов о вашем проекте"></textarea>
+					<textarea  qtip-position="left" qtip-content="Описание проекта обязательно" class="popup-textarea" name="popup-textarea" placeholder="Пара слов о вашем проекте"></textarea>
 					<button class="popup-buttom" type="submit">Добавить</button>
 				</div>
 			</div>
 		</form>
 	</div>
 	<!-- Добавление проекта конец-->
-	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/jquery/dist/jquery.js"></script>	
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src='js/app_progect.js'></script>
-	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validation.js"></script>
 	<script src="js/main.js"></script>
 	
 </body>

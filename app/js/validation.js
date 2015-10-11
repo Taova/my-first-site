@@ -5,12 +5,19 @@ var validation = (function(){
 	};
 	//Прослушивает события
 	var _setUpListners = function(){
-
+		$('form').on('keydown', '.has-error', _removeError);
+		$('form').on('reset', _clearForm);
+	};
+	var _removeError = function(){
+		$(this).removeClass('has-error');
+	};
+	var _clearForm = function(form){
+		var form = $(this);
+		form.find('input, textarea').trigger('hideTooltip');
+		form.find('.has-error').removeClass('has-error');
 	};
 	//Создает тултипы
 	var _createQtip = function(element, position){
-		console.log("New tultip");
-		console.log(position);
 		//Позиция тултипа
 		if (position === 'right') {
        	  position = {
@@ -51,17 +58,16 @@ var validation = (function(){
 	};
 	//Универсальная функция валидации
 	var validateForm = function(form){
-			console.log('валидация формы');
-			console.log(form);
-		var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+			var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
 			valid = true;
 	$.each(elements, function(index, val) {
-		console.log(val);
 		var element = $(val),
 			val = element.val(),
 			pos = element.attr("qtip-position");
+
 		if (val.length === 0){
-			_createQtip(element, position);
+			element.addClass('has-error');
+			_createQtip(element, pos);
 			valid === false;
 		}
 	});

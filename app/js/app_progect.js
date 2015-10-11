@@ -23,6 +23,7 @@ var myModule=(function() {
 			transition: "slideDown",
 			onClose: function (){
 				form.find('.popup-error').text('').hide();
+				form.trigger('reset');
 			}
 		});
 		console.log("fdfdd");
@@ -35,19 +36,23 @@ var myModule=(function() {
 		//объявляем переменные
 		var form = $(this),
 			url = "add-project.php",
-			myServerGiveMeMoney = _ajaxForm(form, url);
-		
-		myServerGiveMeMoney.done(function(ans) {
-		var succesBox = form.find(".success-mes"),
-			errorBox = form.find(".error-mes");
-			if (ans.status === "OK") {
-				errorBox.hide();
-				succesBox.text(ans.text).show();
-			}else{
-				succesBox.hide();
-				errorBox.text(ans.text).show();
-			} 
-					});
+			defObj = _ajaxForm(form, url);
+
+		if (defObj){
+			defObj.done(function(ans) {
+			var succesBox = form.find(".success-mes"),
+				errorBox = form.find(".error-mes");
+				if (ans.status === "OK") {
+					errorBox.hide();
+					succesBox.text(ans.text).show();
+				}else{
+					succesBox.hide();
+					errorBox.text(ans.text).show();
+				} 
+						});
+
+		}
+	
 		
 				
 	};
@@ -57,8 +62,8 @@ var myModule=(function() {
 	//2. проверяет форму
 	//3. делает запрос на сервер и возвращает ответ с сервера
 	var _ajaxForm = function (form, url){
-		//if(!valid) return false;
-	data = form.serialize();
+		if(!validation.validateForm(form)) return false;
+		data = form.serialize();
 
 	var result = $.ajax({ //запрос на сервер
 			url: url,

@@ -600,6 +600,19 @@ body{
 	border:none;
 	box-shadow: 0 4px #687b8f;
 }
+/*contacts.html оформление тултипов*/
+.qtip-mystyle{
+	background-color: #f97e76;
+	border-color: #f97e76;
+	font-family: 'Arial';
+	color: #ffffff;
+	font-size: 13px;
+}
+.has-error{
+	background-color: #fad2d1 !important;
+	border-color: #f97e76 !important;
+}
+/*contacts.html конец*/
 /*contacts.html конец*/
 /*mywork.html начало*/
 
