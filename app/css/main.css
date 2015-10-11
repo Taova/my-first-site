@@ -429,7 +429,7 @@ body{
 }
 .modal-content{
 	position: fixed;
-
+	z-index: 400;
   	left: 50%;
 	width: 590px;
 	margin-bottom: 150px;
@@ -865,3 +865,10 @@ body{
     cursor: pointer;
  }
 /*Модальное окно добавить проект начало конец*/
+/*placeholder начало*/
+::-webkit-input-placeholder {color:#48cbe8;}
+::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48cbe8;}
+
+/*placeholder конец*/
