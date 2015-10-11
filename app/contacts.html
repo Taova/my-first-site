@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="font/Proxi.css">
 	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/about-me.css">
@@ -92,18 +93,18 @@
 						У вас есть интересный проект? Напишите мне
 					</h2>
 					<div class="right-column-content">
-						<form class="contact-form" action="/echo" method="post">
+						<form id="contact-form" class="contact-form" action="/echo" method="post">
 							<label class="contact-form-name-label">
 								<p class="form-text">Имя</p>
-								<input type="text" class="contact-form-name" id="contact-form-name" name="name" value="" placeholder="Как в вам обращаться">
+								<input type="text" qtip-content="Вы не ввели имя" class="contact-form-name" id="contact-form-name" name="name" value="" placeholder="Как в вам обращаться">
 							</label>
               				<label class="contact-form-email-label">
 	              				<p class="form-text">Email</p>
-	              				<input type="text" class="contact-form-email" id="contact-form-email" name="email" value="" placeholder="Куда мне писать">
+	              				<input type="text" qtip-content="Вы не ввели email" qtip-position='right' class="contact-form-email" id="contact-form-email" name="email" value="" placeholder="Куда мне писать">
               				</label>
               				<label class="contact-form-textarea">
               				<p class="form-text">Сообщение</p>
-              				<textarea  class="textarea" id="contact-form-textarea" class="textarea" name="message" id="message" placeholder="Кратко в чем суть?"></textarea>	
+              				<textarea  class="textarea" qtip-content="Вы не ввели описание проекта" qtip-position='right' id="contact-form-textarea" class="textarea" name="message" id="message" placeholder="Кратко в чем суть?"></textarea>	
               				</label>		
               				<div class="patcha">
 								<p class="form-text">Введите код указанный на картинке</p>
@@ -111,7 +112,7 @@
 									<div class="patcha-code">
 										E0Ed3r
 									</div>
-									<input class="captcha-input" value="" type="text" name="name" id="name" placeholder="Введите код">
+									<input class="captcha-input" qtip-content="Введите код" qtip-position='right' value="" type="text" name="name" id="name" placeholder="Введите код">
 								</label>
 							</div>
 							<div class="contact-form-btn clearfix">
@@ -136,6 +137,10 @@
 	</footer>
 
 	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/app_progect.js"></script>
+	<script src="js/validation.js"></script>
+	<script src="js/contacts.js"></script>
 	<script src="js/main.js"></script>
 	
 </body>
