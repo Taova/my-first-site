@@ -489,6 +489,9 @@ body{
 	font-family:'fira_sansbook', sans-serif;
 	color: #fff; 
 }
+.login-form .btn:focus{
+	outline:none;
+}
 /*Авторизация конец*/
 /*contacts.html начало*/
 .right-column.contactpage{
@@ -587,6 +590,10 @@ body{
 	font-size: 19px;
 	font-family: 'fira_sansbook', sans-serif;
 	box-shadow: 0 4px #3ba8c0;
+}
+.contact-form-btn .btn:focus,
+.contact-form-btn .clear-btn:focus{
+	overflow: none;
 }
 .contact-form-btn .btn{
 	float: left;
@@ -863,6 +870,9 @@ body{
     padding: 5px 25px;
     box-shadow: 0 4px #3ba8c0;
     cursor: pointer;
+ }
+ .popup-buttom:focus{
+ 	overflow: none;
  }
 /*Модальное окно добавить проект начало конец*/
 /*placeholder начало*/

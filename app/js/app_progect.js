@@ -26,7 +26,6 @@ var myModule=(function() {
 				form.trigger('reset');
 			}
 		});
-		console.log("fdfdd");
 	};
 
 	//Добавляет проект
