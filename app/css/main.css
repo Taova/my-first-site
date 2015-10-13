@@ -825,6 +825,9 @@ body{
     color: #959aa8;
     font-weight: normal;
  }
+.popup-form-wrapper .popup-form-item{
+ position: relative;
+ }
  .popup-form-item .popup-input{
  	display: block;
     margin: 0 auto;
@@ -836,15 +839,37 @@ body{
     padding-left: 20px;
     color: #48cbe8;
  }
+ /*
  .popup-input.pop-img{
  	background-image: url(../img/download-img.png);
     background-repeat: no-repeat;
     background-position: right;
- }
+ }*/
+.fileupload-lable{
+	display: block;
+ 	width: 52px;
+ 	height: 41px;
+	position: absolute;
+  	right: 0;
+	background: url(../img/download-img.png) no-repeat;
+	background-color: #48cbe8;
+	border-radius: 0 4px 4px 0;
+}
+.fileupload{ /* хак, взятый из html5boilerplate */
+	border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+ /*
  .popup-input.popup-img{
  	display: none;
  	cursor: pointer;
- }
+ }*/
  .popup-form-item .popup-textarea{
  	border-radius: 2px;
     border:1px solid #48cbe8;

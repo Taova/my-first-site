@@ -94,7 +94,7 @@
 						<div class="column-gallery clearfix">
 							<section class="gallery-lyst">
 								<div class="gallery-item">	
-									<img  class="gallery-img" src="img/sect1.jpg">
+									<img  class="gallery-img" src="img/sect1.jpg" alt="Изображение">
 									<div class="hover-layer">
 										<a class="hover-text" href="#">название</a>
 									</div>						
@@ -104,7 +104,7 @@
 							</section>
 							<section class="gallery-lyst">
 								<div class="gallery-item">	
-									<img  class="gallery-img" src="img/sect2.jpg">
+									<img  class="gallery-img" src="img/sect2.jpg" alt="Изображение">
 									<div class="hover-layer">
 										<a class="hover-text" href="#">название</a>
 									</div>				
@@ -114,7 +114,7 @@
 							</section>
 							<section class="gallery-lyst">
 								<div class="gallery-item">	
-									<img  class="gallery-img" src="img/sect3.jpg">
+									<img  class="gallery-img" src="img/sect3.jpg" alt="Изображение">
 									<div class="hover-layer">
 										<a class="hover-text" href="#">название</a>
 									</div>				
@@ -124,7 +124,7 @@
 							</section>
 							<section class="gallery-lyst">
 								<div class="gallery-item">	
-									<img  class="gallery-img" src="img/sect4.jpg">
+									<img  class="gallery-img" src="img/sect4.jpg" alt="Изображение">
 									<div class="hover-layer">
 										<a class="hover-text" href="#">название</a>
 									</div>				
@@ -134,7 +134,7 @@
 							</section>
 							<section class="gallery-lyst">
 								<a  id="add-new-item" class="gallery-item add">	
-									<img  class="add-gallery-img" src="img/add-img-project.png">
+									<img  class="add-gallery-img" src="img/add-img-project.png" alt="Изображение">
 									<div class="add-text-project">
 										Добавить проект
 									</div>
@@ -182,8 +182,11 @@
 					<label class="popup-form-lbl">Название проекта</label>
 					<input type="text"  qtip-position="left" qtip-content="Вы не ввели название" name="name-project" placeholder="Введите название" class="popup-input">
 					<label class="popup-form-lbl">Картинка проекта</label>
+					<label class="fileupload-lable">
+								<input id="fileupload" class="fileupload" type="file" name="files[]">
+								<input id="fileurl" type="hidden" name="fileurl">
+					</label>
 					<input type="text" qtip-position="left" qtip-content="Загрузите картинку" name="name-file-project" placeholder="Загрузите картинку" class="popup-input pop-img">
-					<input type="file"  name="file-project" class="popup-input popup-img">
 					<label class="popup-form-lbl">URL проекта</label>
 					<input type="text"  qtip-position="left" qtip-content="Вы не добавили ссылку" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
 					<label class="popup-form-lbl">Описание</label>
