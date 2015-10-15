@@ -7,6 +7,10 @@ var validation = (function(){
 	var _setUpListners = function(){
 		$('form').on('keydown', '.has-error', _removeError);
 		$('form').on('reset', _clearForm);
+		if (typeof console === "undefined" || typeof console.log === "undefined") {
+     	console = {};
+     	console.log = function() {};
+ }
 	};
 	var _removeError = function(){
 		$(this).removeClass('has-error');

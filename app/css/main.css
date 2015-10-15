@@ -632,6 +632,7 @@ body{
 	position: relative;
 	min-height: 200px;
 	width: 180px;
+	display: inline-block;
 }
 .right-column .gallery-lyst .gallery-item{
 	width: 176px;
@@ -719,12 +720,10 @@ body{
 .right-column-description .column-gallery{
 	margin-left: -30px;
 }
-.right-column .gallery-lyst:last-child .gallery-item{
+.right-column .gallery-item.add{
 	border-style: dashed;
 }
-.right-column .gallery-lyst .gallery-item{
-	background: none;
-}
+
 .column-gallery .gallery-lyst:last-child .gallery-img:hover{
 	background: none;
 	}
