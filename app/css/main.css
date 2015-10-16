@@ -585,11 +585,16 @@ body{
 	padding-right: 20px;
 	background-color: #48cbe8;
 	border-radius: 4px;
-	border-bottom: 1px solid #3ba8c0;
+	border-bottom: 1px solid #48cbe8;
 	color: #fff;
 	font-size: 19px;
 	font-family: 'fira_sansbook', sans-serif;
 	box-shadow: 0 4px #3ba8c0;
+}
+.contact-form-btn .clear-btn{
+	background-color: #849db5;
+	border-bottom: 1px solid #849db5;
+	box-shadow: 0 4px #687b8f;
 }
 .contact-form-btn .btn:focus,
 .contact-form-btn .clear-btn:focus{
@@ -600,12 +605,6 @@ body{
 }
 .contact-form-btn .clear-btn{
 	float: right;
-}
-.contact-form-btn .btn:hover,
-.contact-form-btn .clear-btn:hover{
-	background-color:#849db5;
-	border:none;
-	box-shadow: 0 4px #687b8f;
 }
 /*contacts.html оформление тултипов*/
 .qtip-mystyle{

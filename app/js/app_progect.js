@@ -4,14 +4,27 @@ var myModule=(function() {
 	var init = function(){
 		_setUpListners();
 	};
-
+	// Получаем название файла из пути
+	var _getNameFromPath = function (path) {
+		return path.replace(/\\/g, '/').replace(/.*\//, '');
+	};
 	//Прослушивает события
 	var _setUpListners = function(){
 		$('#add-new-item').on('click', _showModal);//открыть модальное окно
 		$ ('#add-new-project').on('submit', _addProject); //добавление проекта
-		
+		$('#add-new-project').on('change', _changefileUpload);
 		};
+	// Изменили файл аплоад (добавили файл в файлаплоад)
+	var _changefileUpload = function (){
+		var input = $(this), // инпут type="file"
+			name = _getNameFromPath(input.val()); // имя загруженного файла
 
+		$('#name-file-project')
+			.val(name) 
+			.trigger('hideTooltip')
+			.removeClass('has-error'); 
+	};
+	console.log($('#name-file-project'));
 	//Работает с модальным окном
 	var _showModal = function (ev) {
 		ev.preventDefault();
