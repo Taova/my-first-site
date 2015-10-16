@@ -846,7 +846,7 @@ body{
 .fileupload-lable{
 	display: block;
  	width: 52px;
- 	height: 41px;
+ 	height: 40px;
 	position: absolute;
   	right: 0;
 	background: url(../img/download-img.png) no-repeat;

@@ -12,7 +12,7 @@ var myModule=(function() {
 	var _setUpListners = function(){
 		$('#add-new-item').on('click', _showModal);//открыть модальное окно
 		$ ('#add-new-project').on('submit', _addProject); //добавление проекта
-		$('#add-new-project').on('change', _changefileUpload);
+		$('#fileupload').on('change', _changefileUpload);
 		};
 	// Изменили файл аплоад (добавили файл в файлаплоад)
 	var _changefileUpload = function (){

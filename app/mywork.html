@@ -39,7 +39,7 @@
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<!--[if It IE 7]>
+	<!--[if lt IE 7]>
 	<p class="browsehappy"> Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappe.com">обновите</a> его.</p>
 	<![endif] -->
 	
@@ -190,7 +190,7 @@
 								<input id="fileupload" class="fileupload" type="file" name="files[]">
 								<input id="fileurl" type="hidden" name="fileurl">
 					</label>
-					<input type="text" qtip-position="left" qtip-content="Загрузите картинку" name="name-file-project" id="name-file-project" placeholder="Загрузите картинку" class="popup-input pop-img">
+					<input id="name-file-project" type="text" qtip-position="left" qtip-content="Загрузите картинку" name="name-file-project"  placeholder="Загрузите картинку" class="popup-input pop-img">
 					<label class="popup-form-lbl">URL проекта</label>
 					<input type="text"  qtip-position="left" qtip-content="Вы не добавили ссылку" name="url-project" placeholder="Добавьте ссылку" class="popup-input">
 					<label class="popup-form-lbl">Описание</label>
