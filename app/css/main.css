@@ -475,6 +475,9 @@ body{
 	margin-bottom: 23px;
 
 }
+.placeholder{
+	color: #48cbe8;
+}
 .login-form .btn{
 	margin-left: 97px;
 	height: 53px;
@@ -516,6 +519,10 @@ body{
 	background-color: #eff3f7;
 	padding: 42px 120px;
 	margin-bottom: 30px;
+}
+.contact-form .input-form,
+.contact-form .textarea{
+	color:#48cbe8 ;
 }
 .contact-form-name-label{
 	float: left;
@@ -899,9 +906,13 @@ body{
  }
 /*Модальное окно добавить проект начало конец*/
 /*placeholder начало*/
-::-webkit-input-placeholder {color:#48cbe8;}
-::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
-:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#48cbe8;}
+input::-webkit-input-placeholder {color:#48cbe8;}
+input::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+input:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+input:-ms-input-placeholder      {color:#48cbe8;}
+textarea::-webkit-input-placeholder {color:#48cbe8;}
+textarea::-moz-placeholder          {color:#48cbe8;}/* Firefox 19+ */
+textarea:-moz-placeholder           {color:#48cbe8;}/* Firefox 18- */
+textarea:-ms-input-placeholder      {color:#48cbe8;}
 
 /*placeholder конец*/

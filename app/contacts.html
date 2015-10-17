@@ -39,9 +39,9 @@
 	<script src="bower/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<!--[if lt IE 7]>
-	<p class="browsehappy"> Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappe.com">обновите</a> его.</p>
-	<![endif] -->
+	<!-- [if lt IE 7]> 
+ <p class="browsegappy"> Вы используете устаревший браузер. Пожалуйста, <a href="http://browsehappy.com/"> обновите </a></p>
+ </![endif]-->
 	
 	<div class="wrapper">
 		<header class="main-header clearfix">
@@ -96,11 +96,11 @@
 						<form id="contact-form" class="contact-form" action="/echo" method="post">
 							<label class="contact-form-name-label">
 								<p class="form-text">Имя</p>
-								<input type="text" qtip-position="left" qtip-content="Вы не ввели имя" class="contact-form-name" id="contact-form-name" name="name" value="" placeholder="Как в вам обращаться">
+								<input type="text" qtip-position="left" qtip-content="Вы не ввели имя" class="input-form contact-form-name" id="contact-form-name" name="name" value="" placeholder="Как в вам обращаться">
 							</label>
               				<label class="contact-form-email-label">
 	              				<p class="form-text">Email</p>
-	              				<input type="text" qtip-content="Вы не ввели email" qtip-position='right' class="contact-form-email" id="contact-form-email" name="email" value="" placeholder="Куда мне писать">
+	              				<input type="text" qtip-content="Вы не ввели email" qtip-position='right' class="input-form contact-form-email" id="contact-form-email" name="email" value="" placeholder="Куда мне писать">
               				</label>
               				<label class="contact-form-textarea">
               				<p class="form-text">Сообщение</p>
@@ -112,7 +112,7 @@
 									<div class="patcha-code">
 										E0Ed3r
 									</div>
-									<input type="text" class="captcha-input" qtip-content="Введите код" qtip-position='right' value="" name="name" id="name" placeholder="Введите код">
+									<input type="text" class="input-form captcha-input" qtip-content="Введите код" qtip-position='right' value="" name="name" id="name" placeholder="Введите код">
 								</label>
 							</div>
 							<div class="contact-form-btn clearfix">

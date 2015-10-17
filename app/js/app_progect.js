@@ -24,7 +24,6 @@ var myModule=(function() {
 			.trigger('hideTooltip')
 			.removeClass('has-error'); 
 	};
-	console.log($('#name-file-project'));
 	//Работает с модальным окном
 	var _showModal = function (ev) {
 		ev.preventDefault();
